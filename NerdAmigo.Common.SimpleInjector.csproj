@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SimpleInjector">
-      <HintPath>..\..\queue\amazon-sqs\packages\SimpleInjector.3.0.4\lib\net45\SimpleInjector.dll</HintPath>
+    <Reference Include="SimpleInjector, Version=3.1.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\ticket-solutions-backoffice\packages\SimpleInjector.3.1.2\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\abstractions\NerdAmigo.Abstractions.csproj">
+    <ProjectReference Include="..\..\abstractions\NerdAmigo.Abstractions\NerdAmigo.Abstractions.csproj">
       <Project>{2bff206d-8d34-47c2-92c5-6d002cb2b424}</Project>
       <Name>NerdAmigo.Abstractions</Name>
     </ProjectReference>
